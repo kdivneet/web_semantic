@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstract Fluid Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #7928ca, #ff0080);
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        header {
+            position: absolute;
+            top: 20px;
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            font-size: 16px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffde59;
+        }
+        .content {
+            text-align: center;
+        }
+        .content h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            font-weight: 600;
+            margin: 0 0 20px 0;
+        }
+        .content p {
+            font-size: 18px;
+            margin: 0 0 40px 0;
+        }
+        .read-more {
+            padding: 10px 30px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #ff0080;
+            background-color: #ffffff;
+            border: 2px solid #ffffff;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .read-more:hover {
+            background-color: transparent;
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">G.N.D.E.C</div>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="content">
+        <img src="image/logo.jpg" alt="Company Logo" style="max-height: 150px; border-radius: 50%;">
+        <h1>Training TR-103 Report</h1>
+        <p>By: Divneet Kaur <br>  URN: 2104093 <br>Guru Nanak Dev Engineering College, Ludhiana, Punjab</p>
+        <a href="daily.html" class="read-more">Daily Report</a>
+    </div>
+</body>
+</html>
