@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Training TR-103 Report</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #7928ca, #ff0080);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .header nav {
+            margin-top: 10px;
+        }
+        .header nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .content {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        .content img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .content h2 {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        .content p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="submit"] {
+            background-color: whitesmoke;
+            color: #ff758c;
+            cursor: pointer;
+            border: none;
+            text-align: center;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #ff758c;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>G.N.D.E.C</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+    <div class="content">
+        <img src="../dailyreport/my.jpg" alt="Divneet Kaur">
+        <h2>Contact: Divneet Kaur</h2>
+        <p>URN: 2104093</p>
+        <p>Guru Nanak Dev Engineering College, Ludhiana, Punjab</p>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Suggestions:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Training TR-103 Report</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(135deg, #7928ca, #ff0080);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .header nav {
+            margin-top: 10px;
+        }
+        .header nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .content img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin: 20px 0;
+            text-align: left;
+        }
+        .section h2 {
+            font-size: 1.8em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        .section h2::before, .section h2::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            background: #fff;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .section h2::before {
+            left: -60%;
+        }
+        .section h2::after {
+            right: -60%;
+        }
+        .arrow {
+            font-size: 1em;
+            transition: transform 0.3s;
+        }
+        .section-content {
+            display: none;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="submit"] {
+            background-color: #ff758c;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            text-align: center;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #ff5673;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>G.N.D.E.C</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+    <div class="content">
+        <img src="../dailyreport/my.jpg" alt="Divneet Kaur">
+        <div class="section">
+            <h2 onclick="toggleSection(this)">Introduction <span class="arrow">▼</span></h2>
+            <div class="section-content">
+                <p>My name is Divneet Kaur, and I am currently pursuing a B.Tech in Computer Science and Engineering at Guru Nanak Dev Engineering College (GNDEC). I am a very keen and passionate learner, always eager to learn new things.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2 onclick="toggleSection(this)">Technical Interest <span class="arrow">▼</span></h2>
+            <div class="section-content">
+         <p>Topic 1: Machine Intelligence - To explore the advancements and applications of machine intelligence in various fields.</p>
+        <p>Topic 2: Cybersecurity - To understand the importance of cybersecurity and its impact on protecting data and systems.</p>
+        <p>Topic 3: Web Development - To learn about the latest trends and technologies in web development and how they shape the modern web.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleSection(header) {
+            const content = header.nextElementSibling;
+            const arrow = header.querySelector('.arrow');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            arrow.textContent = content.style.display === 'block' ? '▲' : '▼';
+            arrow.style.transform = content.style.display === 'block' ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+    </script>
+</body>
+</html>
+
